@@ -15,7 +15,7 @@ vidCover.setAttribute('draggable', true);
 
 let startX, startY, startTX, startTY;
 vidCover.addEventListener('dragstart', e => {
-	event.dataTransfer.setDragImage(emptyImg, 0, 0);
+	e.dataTransfer.setDragImage(emptyImg, 0, 0);
 
 	startTX = transform.translateX;
 	startTY = transform.translateY;
